@@ -27,3 +27,54 @@ Access the PostgreSQL prompt to interact with the database:
 sudo -i -u postgres
 psql
 ```bash
+
+# Basic Features
+1. Sign up and create a profile
+2. Add other profiles as friends
+3. Add posts that contains text, photos, or videos
+4. See posts that friends have added (Feed page)
+5. Like and add comment to posts others have added
+
+## 1. Sign up and create a profile
+Table: user_profile
+id
+email_address
+password
+country
+date_of_birth
+given_name
+surname
+
+## 2. Add other profiles as friends
+Friendship = relationship between two profiles
+Table 2: friendship
+FK: profile_request
+FK: profile_accept
+
+## 3. Add posts that contains text, photos, or videos
+Table: user_posts
+PK: id
+FK: profile_id
+written_text
+media_location
+created_date
+updated_date
+
+## 4. See posts that friends have added (Feed page)
+Likely built into the application - No DB Changes required
+
+## 5. Like and add comment to posts others have added
+Table: post_like
+PK: id
+FK: post_id
+FK: profile_id
+created_datetime
+
+Table: post_comment
+PK: id
+FK: post_id
+FK: profile_id
+comment_text
+created_datetime
+
+ 
