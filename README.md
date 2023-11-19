@@ -16,7 +16,7 @@ sudo apt install postgresql
 ```
 ### Step 3: Verify Installation
 Check the status of the PostgreSQL service to confirm it's running:
-```bash
+
 Verify the installed version of PostgreSQL:
 ```bash
 sudo -u postgres psql -c "SELECT version();"
@@ -26,7 +26,7 @@ Access the PostgreSQL prompt to interact with the database:
 ```bash
 sudo -i -u postgres
 psql
-```bash
+```
 
 # Basic Features
 1. Sign up and create a profile
