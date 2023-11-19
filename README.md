@@ -77,4 +77,8 @@ Table: post_comment
 - comment_text
 - created_datetime
 
+# ER Diagram - Basic Schema Design
+![Social Media DB Design](https://github.com/hsmgowtham/Social-Media-App-Database/assets/123358865/095d1b63-f537-4354-a77c-c27c2a22f842)
+
+
  
