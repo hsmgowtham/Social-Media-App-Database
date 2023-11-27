@@ -47,6 +47,7 @@ Table: user_profile
 
 ## 2. Add other profiles as friends
 Friendship = relationship between two profiles
+
 Table 2: friendship
 - FK: profile_request
 - FK: profile_accept
